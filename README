@@ -1,0 +1,21 @@
+Another regex tester.
+
+currently hosting on http://i.regex.me . only a basic structure, needs lots of
+work to refine.
+
+you may test it like this on your own machine: python manage.py runserver
+
+* just starting, not yet finished
+* mainly for practising python
+* a web.py project
+* with jinja2 template 
+* RegexBuddy-like
+* currently runs under nginx
+* maybe implement a GAE version
+
+TODO:
+	<> in Replace;
+        highlight recursive error;
+	highlight captured text;
+	cache problem;
+	USE.
