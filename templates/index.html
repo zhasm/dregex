@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	    
+        <title>Lightweight Online RegexBuddy</title>
+	
+	<link type="text/css" href="./site_media/jquery-ui-1.8.4.custom.css" rel="stylesheet" />
+	<link type="text/css" href="./site_media/style.css" rel="stylesheet" />
+	
+        <script type="text/javascript" charset="utf-8" src="./site_media/js/jquery-1.4.2.min.js"></script> 
+	<script type="text/javascript" src="./site_media/js/jquery-ui-1.8.4.custom.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="./site_media/main.js" ></script>
+
+
+    </head>
+    <body>
+        
+        <h2>iRegex</h2>
+        <div class="desc">a lightweight regex tester</div>
+        <div class="ops">
+            <select id="langs">
+            {% for lang in langs %}
+                <option>{{ lang }}</option>
+            {% endfor %}
+            </select>
+            {% for ro in reoptions %}
+                <input name="{{ ro.0 }}" type="checkbox" id="{{ ro.1 }}" class="flag"> 
+                    {{ ro.2 }} 
+                </input> 
+            {% endfor %}
+        </div>
+            <div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">Match</a></li>
+				<li><a href="#tabs-2">Replace</a></li>
+				<li><a href="#tabs-3">Split</a></li>
+			</ul>
+            <div id="tabs-1">
+                <textarea id="match1" name="regex" rows=12 cols=200 class="regex"></textarea> 
+            </div>
+            <div id="tabs-2">
+                <textarea id="match2" name="regex" rows=5 cols=200 class="regex"></textarea> 
+                <br/>
+                <textarea id="replace" name="replace" rows=5 cols=200 ></textarea> 
+            </div>
+            <div id="tabs-3">
+                <textarea id="match3" name="regex" rows=12 cols=200 class="regex"></textarea> 
+            </div>
+		</div>
+
+        <div id="useZone">
+			<ul>
+				<li><a href="#tabs-5">Test</a></li>
+				<li><a href="#tabs-6">Use</a></li>
+			</ul>
+            <div id="tabs-5">
+                <textarea id="text" name="text"  rows=20 cols=200></textarea>
+                <h3>Result</h3>
+                <div class='result' id="result">
+                
+                </div>
+
+
+            </div>
+            <div id="tabs-6">
+                Function: <select id='functions'>
+                    {% for f in funcs %}
+                        <option>{{ f }}</option> 
+                    {% endfor %}
+                        </select>
+                <textarea id="use_regex"  rows=20 cols=200></textarea> 
+            </div>
+	</div>
+    </body>
+</html>

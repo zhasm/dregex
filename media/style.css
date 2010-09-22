@@ -1,0 +1,78 @@
+body, #tabs-1, #tabs-2, #tabs-3, #tabs li, #tabs-5, #tabs-6, #useZone li, option {
+    font-family:"Courier New",Courier,mono;
+    font-size:12px;
+}
+
+ul li a, h3{
+/*    font-family: "Courier New",Courier,mono;
+    font-size: 12px;*/
+    text-shadow: 1px 2px 1px #ccc;
+    font-weight: bold;
+}
+
+hl{
+    color: blue;
+    background-color:yellow;
+}
+
+lh{
+    
+ color: yellow;
+ background-color : blue;
+    
+}
+
+result{
+    padding:5px;
+    margin:5px;
+}
+
+h2{
+    
+    text-shadow: 2px 3px 1px #ccc;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.desc{
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+}
+
+.ops{
+    border:1px dotted;
+    margin-bottom:10px;
+    margin-left:0;
+    margin-top:-12px;
+    padding: 4px;
+    }
+/* textarea resizable */
+
+.ui-resizable-se {
+    bottom: 17px;
+    }
+textarea{
+    
+    overflow: auto;
+    height: 100px; padding: 0.5em;
+    width: 100%;
+    spellcheck: false;
+   }
+#match2{
+    margin-bottom:5px;
+}
+
+#replace{
+    margin-top:5px;
+}
+
+.result{
+    border:1px dotted;
+    margin-bottom: 4px;
+    padding: 4px;
+    height: auto;
+    min-height: 20px;
+    }
